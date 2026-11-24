@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" width="640" height="380" role="img" aria-labelledby="barbTitle">
+  <title id="barbTitle">Ilustración de formación en barbería, precisión técnica y gestión de turnos</title>
+  <defs>
+    <linearGradient id="barbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7f1d1d" />
+      <stop offset="60%" stop-color="#b91c1c" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="380" rx="16" fill="url(#barbBg)" />
+
+  <!-- Tarjeta central limpia -->
+  <rect x="52" y="42" width="536" height="296" rx="16" fill="#ffffff" />
+
+  <!-- Poste clásico estilizado en rojo y blanco -->
+  <g transform="translate(110, 86)">
+    <rect x="0" y="0" width="54" height="16" rx="8" fill="#991b1b" />
+    <rect x="7" y="16" width="40" height="170" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="2" />
+    <path d="M7 42 L47 22 V42 L7 62 Z" fill="#dc2626" />
+    <path d="M7 82 L47 62 V82 L7 102 Z" fill="#991b1b" />
+    <path d="M7 122 L47 102 V122 L7 142 Z" fill="#dc2626" />
+    <path d="M7 162 L47 142 V162 L7 182 Z" fill="#991b1b" />
+    <rect x="0" y="186" width="54" height="16" rx="8" fill="#991b1b" />
+  </g>
+
+  <!-- Bloques de organización y técnica -->
+  <text x="206" y="108" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#7f1d1d">Formación en Barbería &amp; Precisión</text>
+  <text x="206" y="130" font-family="system-ui, sans-serif" font-size="12.5" fill="#52525b">Técnica manual, cuidado de herramientas y atención al cliente</text>
+
+  <rect x="206" y="154" width="166" height="72" rx="10" fill="#fef2f2" stroke="#fecaca" />
+  <text x="222" y="182" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#991b1b">Corte &amp; Detalle</text>
+  <text x="222" y="202" font-family="system-ui, sans-serif" font-size="11" fill="#52525b">Degradados y simetría</text>
+
+  <rect x="388" y="154" width="166" height="72" rx="10" fill="#fef2f2" stroke="#fecaca" />
+  <text x="404" y="182" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#991b1b">Higiene &amp; Orden</text>
+  <text x="404" y="202" font-family="system-ui, sans-serif" font-size="11" fill="#52525b">Mantenimiento de equipo</text>
+
+  <rect x="206" y="242" width="348" height="62" rx="10" fill="#fafafa" stroke="#e4e4e7" />
+  <circle cx="232" cy="273" r="10" fill="#dc2626" />
+  <text x="252" y="269" font-family="system-ui, sans-serif" font-size="12.5" font-weight="700" fill="#18181b">Gestión de Turnos y Puntualidad</text>
+  <text x="252" y="287" font-family="system-ui, sans-serif" font-size="11" fill="#52525b">Bloques ordenados para reducir esperas y mejorar la atención</text>
+</svg>
+

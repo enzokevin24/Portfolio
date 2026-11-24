@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" width="640" height="380" role="img" aria-labelledby="eduTitle">
+  <title id="eduTitle">Maqueta visual del sistema escolar EduEventos en Python Tkinter</title>
+  <defs>
+    <linearGradient id="eduHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7f1d1d" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </linearGradient>
+    <linearGradient id="eduBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5f5" />
+      <stop offset="100%" stop-color="#fee2e2" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="380" rx="16" fill="url(#eduBg)" />
+  <!-- Ventana Tkinter -->
+  <rect x="44" y="34" width="552" height="312" rx="12" fill="#ffffff" stroke="#fecaca" stroke-width="2" />
+  <path d="M44 46 C44 39.4 49.4 34 56 34 H584 C590.6 34 596 39.4 596 46 V74 H44 Z" fill="url(#eduHeader)" />
+  <circle cx="68" cy="54" r="5" fill="#fecaca" />
+  <circle cx="86" cy="54" r="5" fill="#fca5a5" />
+  <circle cx="104" cy="54" r="5" fill="#ffffff" />
+  <text x="320" y="59" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#ffffff">EduEventos — Organizador Escolar (Python + Tkinter)</text>
+
+  <!-- Panel Izquierdo Formulario -->
+  <rect x="66" y="96" width="210" height="226" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5" />
+  <text x="82" y="122" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#7f1d1d">Nuevo Evento Escolar</text>
+  <rect x="82" y="136" width="178" height="28" rx="6" fill="#ffffff" stroke="#fca5a5" />
+  <text x="92" y="154" font-family="system-ui, sans-serif" font-size="11" fill="#52525b">Acto 25 de Mayo</text>
+  <rect x="82" y="176" width="178" height="28" rx="6" fill="#ffffff" stroke="#fca5a5" />
+  <text x="92" y="194" font-family="system-ui, sans-serif" font-size="11" fill="#52525b">Fecha: 25/05 • 09:00 hs</text>
+  <rect x="82" y="216" width="178" height="28" rx="6" fill="#ffffff" stroke="#fca5a5" />
+  <text x="92" y="234" font-family="system-ui, sans-serif" font-size="11" fill="#52525b">Curso: 6º E • Salón Actos</text>
+  <rect x="82" y="264" width="178" height="36" rx="8" fill="#b91c1c" />
+  <text x="171" y="286" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#ffffff">+ Agendar Evento</text>
+
+  <!-- Panel Derecho Lista de Eventos -->
+  <rect x="294" y="96" width="280" height="226" rx="10" fill="#ffffff" stroke="#e4e4e7" stroke-width="1.5" />
+  <text x="312" y="122" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#18181b">Cronograma Institucional</text>
+
+  <rect x="312" y="138" width="244" height="48" rx="8" fill="#fef2f2" stroke="#fca5a5" />
+  <rect x="312" y="138" width="6" height="48" rx="3" fill="#dc2626" />
+  <text x="328" y="158" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#7f1d1d">Feria de Ciencias &amp; Robótica</text>
+  <text x="328" y="175" font-family="system-ui, sans-serif" font-size="10.5" fill="#52525b">Laboratorio • 6º Año • Confirmado</text>
+
+  <rect x="312" y="198" width="244" height="48" rx="8" fill="#fafafa" stroke="#e4e4e7" />
+  <rect x="312" y="198" width="6" height="48" rx="3" fill="#991b1b" />
+  <text x="328" y="218" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#18181b">Jornada de Informática</text>
+  <text x="328" y="235" font-family="system-ui, sans-serif" font-size="10.5" fill="#52525b">Aula Magna • 10:30 hs • Pendiente</text>
+
+  <rect x="312" y="258" width="244" height="48" rx="8" fill="#fafafa" stroke="#e4e4e7" />
+  <rect x="312" y="258" width="6" height="48" rx="3" fill="#ef4444" />
+  <text x="328" y="278" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#18181b">Torneo Intercolegial</text>
+  <text x="328" y="295" font-family="system-ui, sans-serif" font-size="10.5" fill="#52525b">Patio Central • 14:00 hs • Activo</text>
+</svg>
+

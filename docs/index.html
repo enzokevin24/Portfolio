@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentación y Presentación — Portfolio Enzo Camaño</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="docs.css">
+</head>
+<body>
+  <header class="docs-header">
+    <div class="container">
+      <div class="docs-topbar">
+        <span class="docs-kicker">Aplicaciones Informáticas II • 6º E • Instituto San Agustín</span>
+        <a href="../index.html" class="back-btn">← Abrir Portfolio Principal</a>
+      </div>
+      <h1>Documentación Técnica y Presentación</h1>
+      <p class="docs-lead">
+        Guía completa del portfolio de <strong>Enzo Eduardo Camaño</strong>: estructura de archivos, sistema visual rojo/blanco con degradados, explicación del código para defensa en clase, bitácora IA y publicación en GitHub Pages.
+      </p>
+    </div>
+  </header>
+
+  <nav class="tabs-bar" aria-label="Secciones de la documentación">
+    <div class="container tabs-inner" role="tablist">
+      <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-tab="resumen">1. Resumen y Estructura</button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="diseno">2. Diseño y Animaciones</button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="bitacora">3. Bitácora IA y Defensa Oral</button>
+      <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="github">4. Publicar en GitHub Pages</button>
+    </div>
+  </nav>
+
+  <main class="container docs-main">
+    <!-- TAB 1: RESUMEN Y ESTRUCTURA -->
+    <section id="tab-resumen" class="tab-panel active" role="tabpanel">
+      <div class="card card-soft">
+        <h2>Documentos Markdown disponibles en el proyecto</h2>
+        <p>Toda la documentación también se encuentra guardada en formato <code>.md</code> para leer en GitHub o en cualquier editor:</p>
+        <div class="md-links">
+          <a class="md-chip" href="documentacion.md" target="_blank" rel="noopener">docs/documentacion.md</a>
+          <a class="md-chip" href="guia-github-pages.md" target="_blank" rel="noopener">docs/guia-github-pages.md</a>
+          <a class="md-chip" href="bitacora-ia.md" target="_blank" rel="noopener">docs/bitacora-ia.md</a>
+          <a class="md-chip" href="../bitacora_ia.md" target="_blank" rel="noopener">bitacora_ia.md (raíz)</a>
+          <a class="md-chip" href="../README.md" target="_blank" rel="noopener">README.md (raíz)</a>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Organización de carpetas</h3>
+          <pre class="code-block">ENZO/
+├── index.html
+├── README.md
+├── bitacora_ia.md
+├── css/
+│   └── estilos.css
+├── js/
+│   └── script.js
+├── assets/
+│   └── img/
+│       ├── enzo-perfil.jpg
+│       ├── proyecto-edueventos.svg
+│       ├── proyecto-robotica.svg
+│       └── proyecto-barberia.svg
+└── docs/
+    ├── index.html
+    ├── docs.css
+    ├── documentacion.md
+    ├── guia-github-pages.md
+    └── bitacora-ia.md</pre>
+        </div>
+
+        <div class="card">
+          <h3>Contenido adaptado al perfil real</h3>
+          <ul>
+            <li><strong>Presentación y Sobre mí:</strong> Estudiante de 6º año en el Instituto Privado Mixto San Agustín, con experiencia previa como auxiliar en taller mecánico y capacitación en barbería.</li>
+            <li><strong>Proyecto 1 — EduEventos:</strong> Organizador de eventos escolares desarrollado en equipo con Python y Tkinter.</li>
+            <li><strong>Proyecto 2 — Autito Seguidor de Línea:</strong> Robótica escolar con sensores infrarrojos (IR), motores DC y calibración en pista.</li>
+            <li><strong>Proyecto 3 — Barbería y Organización:</strong> Cursos de barbería enfocados en precisión manual, higiene de herramientas y gestión de turnos.</li>
+            <li><strong>Privacidad protegida:</strong> Se excluyeron teléfono, domicilio y edad exacta del CV público.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Etiquetas semánticas HTML5 utilizadas en <code>index.html</code></h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Etiqueta</th>
+                <th>Función en el Portfolio</th>
+                <th>Secciones / Detalle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>&lt;header&gt;</code> y <code>&lt;nav&gt;</code></td>
+                <td>Encabezado fijo con marca <code>EC</code> y menú interno</td>
+                <td>Enlaces exactos a <code>#inicio</code>, <code>#sobre-mi</code>, <code>#proyectos</code>, <code>#habilidades</code> y <code>#contacto</code></td>
+              </tr>
+              <tr>
+                <td><code>&lt;main&gt;</code></td>
+                <td>Contenido principal único de la página</td>
+                <td>Agrupa las cinco secciones solicitadas en la guía</td>
+              </tr>
+              <tr>
+                <td><code>&lt;section&gt;</code></td>
+                <td>Bloques temáticos identificables por <code>id</code></td>
+                <td>Presentación, Sobre mí, Proyectos, Habilidades y Contacto</td>
+              </tr>
+              <tr>
+                <td><code>&lt;article&gt;</code></td>
+                <td>Tarjetas independientes de cada trabajo</td>
+                <td>Cada proyecto incluye Nombre, Problema, Solución, Participación, Tecnologías, Evidencia y Aprendizaje</td>
+              </tr>
+              <tr>
+                <td><code>&lt;footer&gt;</code></td>
+                <td>Cierre del sitio</td>
+                <td>Año 2026, autoría de Enzo Eduardo Camaño y botón volver arriba</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: DISEÑO Y ANIMACIONES -->
+    <section id="tab-diseno" class="tab-panel" role="tabpanel">
+      <div class="card">
+        <h2>Paleta de Colores: Rojo Carmesí, Escarlata y Blanco con Degradados</h2>
+        <p>Todas las tonalidades están centralizadas en variables <code>:root</code> dentro de <code>css/estilos.css</code> manteniendo alto contraste para lectura.</p>
+        <div class="grid-3">
+          <div class="swatch">
+            <div class="swatch-color" style="background: linear-gradient(135deg, #7f1d1d 0%, #b91c1c 52%, #dc2626 100%);"></div>
+            <div class="swatch-info">
+              <strong>Degradado Principal</strong>
+              <span>#7f1d1d → #b91c1c → #dc2626</span>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: linear-gradient(180deg, #ffffff 0%, #fff4f4 100%); border-bottom: 1px solid #f3d4d4;"></div>
+            <div class="swatch-info">
+              <strong>Degradado de Fondo</strong>
+              <span>#ffffff → #fff4f4</span>
+            </div>
+          </div>
+          <div class="swatch">
+            <div class="swatch-color" style="background: #991b1b;"></div>
+            <div class="swatch-info">
+              <strong>Rojo Títulos / Acento</strong>
+              <span>--red-800 (#991b1b)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Animaciones implementadas (GPU 60 fps)</h3>
+          <ul>
+            <li><strong>Entrada escalonada del Hero:</strong> <code>@keyframes heroFadeUp</code> y <code>heroCardIn</code> con variable <code>--hero-delay</code>.</li>
+            <li><strong>Aparición de bloques al scrollear:</strong> <code>IntersectionObserver</code> detecta cada <code>.reveal-block</code> y agrega <code>.is-visible</code>.</li>
+            <li><strong>Barra superior de progreso:</strong> Escala horizontal (<code>transform: scaleX</code>) sincronizada con <code>requestAnimationFrame</code>.</li>
+            <li><strong>Microinteracciones:</strong> Elevación suave en tarjetas, zoom sutil en ilustraciones y filtros interactivos de proyectos.</li>
+            <li><strong>Accesibilidad:</strong> Respeta <code>prefers-reduced-motion: reduce</code> desactivando movimiento excesivo automáticamente.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Cómo funciona el <code>IntersectionObserver</code></h3>
+          <pre class="code-block">const revealObserver = new IntersectionObserver(
+  (entries, observer) =&gt; {
+    entries.forEach((entry) =&gt; {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.12 }
+);</pre>
+          <p style="margin-top: 0.75rem;">
+            Además, JS agrega la clase <code>.js-ready</code> al <code>&lt;html&gt;</code>; si por alguna razón JS estuviera desactivado, todos los bloques permanecen visibles.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: BITÁCORA IA Y DEFENSA ORAL -->
+    <section id="tab-bitacora" class="tab-panel" role="tabpanel">
+      <div class="card card-soft">
+        <h2>Registro de Uso de IA (Resumen de <code>bitacora_ia.md</code>)</h2>
+        <div class="grid-2" style="margin-top: 1rem; margin-bottom: 0;">
+          <div class="card" style="margin-bottom: 0;">
+            <h3>Consulta 1 — Estructura HTML y Privacidad</h3>
+            <p><strong>Objetivo:</strong> Armar la estructura semántica con proyectos reales (EduEventos en Tkinter, Autito seguidor de línea y cursos de barbería).</p>
+            <p><strong>Decisión propia:</strong> Omitir teléfono y edad exacta del CV, y crear ilustraciones SVG reales en lugar de rutas rotas.</p>
+          </div>
+          <div class="card" style="margin-bottom: 0;">
+            <h3>Consulta 2 — Paleta Roja/Blanca, Animaciones y Docs</h3>
+            <p><strong>Objetivo:</strong> Aplicar diseño rojo y blanco con degradados, animaciones de entrada/bloques y documentación en <code>.md</code> + <code>.html</code>.</p>
+            <p><strong>Decisión propia:</strong> Usar JavaScript nativo sin frameworks externos para poder explicar cada función fácilmente.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Guía rápida para explicar el código al docente</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Si te preguntan...</th>
+                <th>Qué responder y dónde mostrarlo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>¿Dónde están los colores y degradados?</td>
+                <td>En <code>css/estilos.css</code> dentro de <code>:root</code> (<code>--red-900</code> a <code>--red-50</code> y <code>--gradient-brand</code>).</td>
+              </tr>
+              <tr>
+                <td>¿Cómo hiciste las animaciones de los bloques?</td>
+                <td>Con <code>.reveal-block</code> en CSS y <code>IntersectionObserver</code> en <code>js/script.js</code> que agrega <code>.is-visible</code> al aparecer en pantalla.</td>
+              </tr>
+              <tr>
+                <td>¿Por qué EduEventos no corre en vivo en el sitio?</td>
+                <td>Porque GitHub Pages aloja sitios estáticos (HTML/CSS/JS) y no ejecuta Python; por eso se documenta y muestra con su maqueta visual.</td>
+              </tr>
+              <tr>
+                <td>¿Cómo protegiste tus datos personales?</td>
+                <td>No se publicó teléfono ni dirección particular; solo correo, ciudad general y disponibilidad horaria.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: PUBLICAR EN GITHUB PAGES -->
+    <section id="tab-github" class="tab-panel" role="tabpanel">
+      <div class="grid-2">
+        <div class="card">
+          <h2>Pasos para publicar en GitHub Pages</h2>
+          <ol>
+            <li>Creá un repositorio público llamado exactamente <code>tuusuario.github.io</code>.</li>
+            <li>Subí los archivos manteniendo <code>index.html</code> en la raíz junto a <code>css/</code>, <code>js/</code>, <code>assets/</code>, <code>docs/</code>, <code>README.md</code> y <code>bitacora_ia.md</code>.</li>
+            <li>No subas la carpeta <code>MATERIAL/</code> si contiene tu CV PDF con número de teléfono privado.</li>
+            <li>Abrí <strong>Settings → Pages</strong> en GitHub.</li>
+            <li>En <strong>Source</strong> elegí <em>Deploy from a branch</em>, seleccioná <code>main</code> y <code>/(root)</code>, y tocá <strong>Save</strong>.</li>
+            <li>Esperá unos minutos y abrí <code>https://tuusuario.github.io</code>.</li>
+          </ol>
+        </div>
+
+        <div class="card">
+          <h2>Checklist Interactivo de Entrega</h2>
+          <span class="progress-pill" id="checklist-status">0 de 7 completados</span>
+          <ul class="checklist" id="delivery-checklist">
+            <li><label><input type="checkbox" data-check="0"> <span><code>index.html</code> ubicado en la raíz del repositorio</span></label></li>
+            <li><label><input type="checkbox" data-check="1"> <span>Menú interno funciona y coincide con cada <code>id</code></span></label></li>
+            <li><label><input type="checkbox" data-check="2"> <span>Las 4 imágenes SVG cargan sin errores</span></label></li>
+            <li><label><input type="checkbox" data-check="3"> <span>Probado en ventana angosta / celular sin desbordes</span></label></li>
+            <li><label><input type="checkbox" data-check="4"> <span><code>bitacora_ia.md</code> completa con al menos 2 consultas</span></label></li>
+            <li><label><input type="checkbox" data-check="5"> <span>GitHub Pages activado en rama <code>main</code> / <code>(root)</code></span></label></li>
+            <li><label><input type="checkbox" data-check="6"> <span>Capturas de escritorio, móvil y enlace público listos</span></label></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="docs-footer">
+    <div class="container">
+      Documentación del Portfolio — Enzo Eduardo Camaño • Aplicaciones Informáticas II (6º E) • 2026
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const tabButtons = Array.from(document.querySelectorAll(".tab-btn"));
+      const panels = {
+        resumen: document.getElementById("tab-resumen"),
+        diseno: document.getElementById("tab-diseno"),
+        bitacora: document.getElementById("tab-bitacora"),
+        github: document.getElementById("tab-github")
+      };
+
+      tabButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const target = btn.dataset.tab;
+          tabButtons.forEach((b) => {
+            b.classList.remove("active");
+            b.setAttribute("aria-selected", "false");
+          });
+          btn.classList.add("active");
+          btn.setAttribute("aria-selected", "true");
+
+          Object.entries(panels).forEach(([key, panel]) => {
+            if (panel) panel.classList.toggle("active", key === target);
+          });
+        });
+      });
+
+      const checkboxes = Array.from(document.querySelectorAll('#delivery-checklist input[type="checkbox"]'));
+      const statusPill = document.getElementById("checklist-status");
+      const storageKey = "enzo-portfolio-checklist-v1";
+
+      function saveAndRenderChecklist() {
+        const state = checkboxes.map((cb) => cb.checked);
+        try {
+          localStorage.setItem(storageKey, JSON.stringify(state));
+        } catch (_e) {}
+        const done = state.filter(Boolean).length;
+        if (statusPill) {
+          statusPill.textContent = `${done} de ${checkboxes.length} completados`;
+        }
+      }
+
+      try {
+        const saved = JSON.parse(localStorage.getItem(storageKey) || "[]");
+        checkboxes.forEach((cb, index) => {
+          cb.checked = Boolean(saved[index]);
+        });
+      } catch (_e) {}
+
+      checkboxes.forEach((cb) => cb.addEventListener("change", saveAndRenderChecklist));
+      saveAndRenderChecklist();
+    })();
+  </script>
+</body>
+</html>
+

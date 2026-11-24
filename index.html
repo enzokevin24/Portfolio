@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio personal de Enzo Eduardo Camaño — Estudiante de 6º año en el Instituto San Agustín. Proyectos escolares en Python Tkinter, robótica educativa y formación en barbería.">
+  <title>Enzo Eduardo Camaño | Portfolio Personal</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <!-- Barra de progreso de lectura controlada por scroll -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Enlace de salto para accesibilidad por teclado -->
+  <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+
+  <!-- Encabezado principal y navegación -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Inicio del portfolio de Enzo Eduardo Camaño">
+        <span class="brand-mark" aria-hidden="true">EC</span>
+        <span class="brand-text">
+          <strong>Enzo Camaño</strong>
+          <small>6º E • Instituto San Agustín</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-principal"
+        aria-label="Abrir menú de navegación">
+        <span class="menu-line" aria-hidden="true"></span>
+        <span class="menu-line" aria-hidden="true"></span>
+        <span class="menu-line" aria-hidden="true"></span>
+      </button>
+
+      <nav id="nav-principal" class="site-nav" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#habilidades" class="nav-link">Habilidades</a>
+        <a href="#colaboradores" class="nav-link">Colaboradores</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección Presentación / Hero -->
+    <section id="inicio" class="hero-section">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title anim-hero" style="--hero-delay: 0.08s;">
+            Enzo Eduardo <span class="text-gradient">Camaño</span>
+          </h1>
+          <p class="hero-lead anim-hero" style="--hero-delay: 0.24s;">
+            Estudiante de 6º año del Instituto Privado Mixto San Agustín con interés en tecnología, robótica educativa, soporte técnico y barbería. Me destaco por mi puntualidad, orden operativo y compromiso en cada proyecto en equipo.
+          </p>
+          <div class="hero-actions anim-hero" style="--hero-delay: 0.34s;">
+            <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+            <a href="assets/docs/cv-enzo-camano.pdf" target="_blank" rel="noopener" class="btn btn-secondary">Ver currículum</a>
+            <a href="#contacto" class="btn btn-secondary">Contactarme</a>
+          </div>
+          <ul class="hero-highlights anim-hero" style="--hero-delay: 0.44s;" aria-label="Datos destacados">
+            <li>
+              <strong>Córdoba Capital</strong>
+              <span>Instituto San Agustín</span>
+            </li>
+            <li>
+              <strong>3 Proyectos</strong>
+              <span>Software, Robótica y Oficio</span>
+            </li>
+            <li>
+              <strong>Experiencia</strong>
+              <span>Taller Mecánico &amp; Barbería</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual anim-hero-card" style="--hero-delay: 0.2s;">
+          <div class="profile-card">
+            <div class="profile-avatar-wrap">
+              <img
+                src="assets/img/enzo-perfil.jpg"
+                alt="Foto de perfil de Enzo Eduardo Camaño"
+                width="260"
+                height="260"
+                class="profile-avatar">
+            </div>
+            <div class="profile-meta">
+              <p class="profile-role">Estudiante • 6º Año Secundario</p>
+              <p class="profile-focus">Python Tkinter • Robótica • Precisión Manual</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Sobre mí -->
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <div class="section-header reveal-block">
+          <span class="section-kicker">Perfil Personal</span>
+          <h2>Sobre mí</h2>
+          <p class="section-intro">
+            Combino formación técnica escolar, experiencia práctica en taller y capacitación en barbería, aplicando responsabilidad y atención al detalle en todo lo que hago.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card reveal-block" style="--delay: 0.08s;">
+            <h3>Mi recorrido y forma de trabajar</h3>
+            <p>
+              Actualmente curso 6º año de nivel secundario en el <strong>Instituto Privado Mixto San Agustín</strong> de Córdoba Capital (2021 – 2026). Me caracterizo por ser una persona puntual, respetuosa y con rápida adaptación al trabajo en equipo.
+            </p>
+            <p>
+              Tuve experiencia laboral como <strong>auxiliar en taller mecánico</strong>, donde desarrollé disciplina para mantener el orden de las herramientas, asistir en tareas operativas y seguir indicaciones técnicas con precisión. En paralelo, realicé <strong>cursos de barbería</strong> y participé en proyectos escolares de programación y robótica.
+            </p>
+          </div>
+
+          <div class="timeline-card reveal-block" style="--delay: 0.18s;">
+            <h3>Formación y Experiencia</h3>
+            <ol class="timeline">
+              <li class="timeline-item">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <div class="timeline-body">
+                  <span class="timeline-date">2021 – 2026 (En curso)</span>
+                  <h4>Instituto Privado Mixto San Agustín</h4>
+                  <p>Educación Secundaria — 6º Año E. Proyectos en informática, programación visual y robótica escolar.</p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <div class="timeline-body">
+                  <span class="timeline-date">Experiencia Laboral</span>
+                  <h4>Auxiliar en Taller Mecánico</h4>
+                  <p>Soporte operativo directo, clasificación y limpieza integral de herramientas e interpretación de indicaciones técnicas.</p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <div class="timeline-body">
+                  <span class="timeline-date">Capacitación Práctica</span>
+                  <h4>Cursos de Barbería</h4>
+                  <p>Técnicas de corte y degradado, higiene de instrumentos, trato respetuoso con clientes y organización de tiempos.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="section section-tinted">
+      <div class="container">
+        <div class="section-header reveal-block">
+          <span class="section-kicker">Trabajos Realizados</span>
+          <h2>Proyectos</h2>
+          <p class="section-intro">
+            Tres experiencias representativas entre proyectos escolares de tecnología y formación práctica de oficio, explicadas desde el problema hasta el aprendizaje obtenido.
+          </p>
+        </div>
+
+        <div class="filter-bar reveal-block" role="group" aria-label="Filtrar proyectos por categoría">
+          <button type="button" class="filter-btn active" data-filter="todos">Todos</button>
+          <button type="button" class="filter-btn" data-filter="software">Software</button>
+          <button type="button" class="filter-btn" data-filter="robotica">Robótica</button>
+          <button type="button" class="filter-btn" data-filter="oficio">Barbería &amp; Gestión</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Proyecto 1: EduEventos -->
+          <article class="project-card reveal-block" data-category="software" style="--delay: 0.06s;">
+            <div class="project-media">
+              <img
+                src="assets/img/proyecto-edueventos.svg"
+                alt="Maqueta visual de la interfaz de EduEventos desarrollada con Python y Tkinter"
+                width="640"
+                height="380"
+                loading="lazy">
+              <span class="project-badge">Software Escolar</span>
+            </div>
+            <div class="project-body">
+              <h3>EduEventos — Organizador de Eventos Escolares</h3>
+              <dl class="project-details">
+                <div>
+                  <dt>Problema</dt>
+                  <dd>La organización de actos, ferias y actividades del colegio dependía de avisos dispersos, generando superposición de fechas y falta de claridad sobre horarios o espacios.</dd>
+                </div>
+                <div>
+                  <dt>Solución</dt>
+                  <dd>Desarrollamos en equipo una aplicación de escritorio con interfaz gráfica en Python y Tkinter para cargar, listar y administrar eventos escolares de forma ordenada.</dd>
+                </div>
+                <div>
+                  <dt>Participación</dt>
+                  <dd>Colaboré en la definición de la estructura de datos de cada evento, pruebas de carga de información, validación visual de formularios y verificación de usabilidad.</dd>
+                </div>
+                <div>
+                  <dt>Tecnologías</dt>
+                  <dd>Python 3, librería gráfica Tkinter, diseño modular de ventanas y manejo de formularios.</dd>
+                </div>
+                <div>
+                  <dt>Evidencia</dt>
+                  <dd>
+                    <button
+                      type="button"
+                      class="evidence-btn"
+                      data-modal-title="EduEventos — Sistema en Python y Tkinter"
+                      data-modal-img="assets/img/proyecto-edueventos.svg"
+                      data-modal-desc="Representación de la interfaz de EduEventos: panel izquierdo para registrar nombre, fecha, horario y curso; panel derecho para visualizar el cronograma institucional.">
+                      Ver esquema de interfaz
+                    </button>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Aprendizaje</dt>
+                  <dd>Comprendí cómo transformar una necesidad real del colegio en una aplicación visual clara y la importancia de probar cada botón y flujo antes de entregar.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <!-- Proyecto 2: Autito Seguidor de Línea -->
+          <article class="project-card reveal-block" data-category="robotica" style="--delay: 0.14s;">
+            <div class="project-media">
+              <img
+                src="assets/img/proyecto-robotica.svg"
+                alt="Esquema técnico del autito seguidor de línea con sensores infrarrojos y motores"
+                width="640"
+                height="380"
+                loading="lazy">
+              <span class="project-badge">Robótica</span>
+            </div>
+            <div class="project-body">
+              <h3>Autito Seguidor de Línea</h3>
+              <dl class="project-details">
+                <div>
+                  <dt>Problema</dt>
+                  <dd>Lograr que un vehículo escolar autónomo recorra un circuito marcado sin salirse de la trayectoria ni perder estabilidad en las curvas.</dd>
+                </div>
+                <div>
+                  <dt>Solución</dt>
+                  <dd>Armado y calibración de un autito robótico equipado con sensores infrarrojos frontales que detectan el contraste de la línea y corrigen la dirección de los motores.</dd>
+                </div>
+                <div>
+                  <dt>Participación</dt>
+                  <dd>Participé en el ensamblaje mecánico del chasis, ordenamiento del cableado, ajuste de altura de sensores y pruebas iterativas en pista junto al equipo.</dd>
+                </div>
+                <div>
+                  <dt>Tecnologías</dt>
+                  <dd>Sensores infrarrojos (IR), motores DC con ruedas, chasis robótico, placa de control y lógica condicional.</dd>
+                </div>
+                <div>
+                  <dt>Evidencia</dt>
+                  <dd>
+                    <button
+                      type="button"
+                      class="evidence-btn"
+                      data-modal-title="Autito Seguidor de Línea — Esquema Técnico"
+                      data-modal-img="assets/img/proyecto-robotica.svg"
+                      data-modal-desc="Diagrama del funcionamiento: los sensores IR frontales leen el contraste entre la línea negra y la superficie blanca para ajustar el giro de los motores.">
+                      Ver diagrama técnico
+                    </button>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Aprendizaje</dt>
+                  <dd>Aprendí que en robótica el hardware y la programación dependen entre sí: una buena calibración física evita errores de lectura en el recorrido.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <!-- Proyecto 3: Formación en Barbería -->
+          <article class="project-card reveal-block" data-category="oficio" style="--delay: 0.22s;">
+            <div class="project-media">
+              <img
+                src="assets/img/proyecto-barberia.svg"
+                alt="Ilustración de práctica de barbería, precisión técnica y gestión ordenada de turnos"
+                width="640"
+                height="380"
+                loading="lazy">
+              <span class="project-badge">Barbería &amp; Gestión</span>
+            </div>
+            <div class="project-body">
+              <h3>Formación en Barbería y Organización de Turnos</h3>
+              <dl class="project-details">
+                <div>
+                  <dt>Problema</dt>
+                  <dd>Aprender un oficio manual que exige simetría visual, cuidado estricto de las herramientas y puntualidad para evitar demoras entre cada atención.</dd>
+                </div>
+                <div>
+                  <dt>Solución</dt>
+                  <dd>Realización de cursos de barbería aplicando técnicas progresivas de corte y degradado, junto con protocolos de higiene y bloques ordenados de atención.</dd>
+                </div>
+                <div>
+                  <dt>Participación</dt>
+                  <dd>Ejecuté prácticas supervisadas de corte, limpieza y mantenimiento de máquinas y tijeras, además de planificar tiempos estimados por servicio.</dd>
+                </div>
+                <div>
+                  <dt>Tecnologías</dt>
+                  <dd>Herramientas profesionales de barbería, técnicas de degradado (fade), desinfección de equipo y control de agenda.</dd>
+                </div>
+                <div>
+                  <dt>Evidencia</dt>
+                  <dd>
+                    <button
+                      type="button"
+                      class="evidence-btn"
+                      data-modal-title="Formación en Barbería — Técnica y Orden"
+                      data-modal-img="assets/img/proyecto-barberia.svg"
+                      data-modal-desc="Síntesis del proceso formativo: precisión en degradados, higiene y mantenimiento de herramientas, y organización de turnos para cumplir horarios.">
+                      Ver ficha del proceso
+                    </button>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Aprendizaje</dt>
+                  <dd>Reforcé la paciencia, el pulso fino, la comunicación respetuosa con las personas y la disciplina para trabajar con prolijidad bajo tiempos reales.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <div class="section-header reveal-block">
+          <span class="section-kicker">Capacidades</span>
+          <h2>Habilidades y Conocimientos</h2>
+          <p class="section-intro">
+            Competencias técnicas escolares, prácticas de taller y habilidades blandas que sostienen mi desempeño cotidiano.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-block reveal-block" style="--delay: 0.06s;">
+            <h3>Tecnología &amp; Desarrollo</h3>
+            <p class="skill-desc">Bases adquiridas en proyectos escolares de informática y robótica.</p>
+            <ul class="tag-list">
+              <li class="tag tag-accent">HTML5 Semántico</li>
+              <li class="tag tag-accent">CSS3 &amp; Diseño Responsive</li>
+              <li class="tag">JavaScript Básico</li>
+              <li class="tag">Python &amp; Tkinter</li>
+              <li class="tag">Robótica con Sensores IR</li>
+              <li class="tag">GitHub &amp; GitHub Pages</li>
+            </ul>
+          </div>
+
+          <div class="skill-block reveal-block" style="--delay: 0.14s;">
+            <h3>Práctica Técnica &amp; Oficio</h3>
+            <p class="skill-desc">Destrezas desarrolladas en taller mecánico y cursos de barbería.</p>
+            <ul class="tag-list">
+              <li class="tag tag-accent">Orden y Clasificación de Herramientas</li>
+              <li class="tag tag-accent">Barbería y Corte de Precisión</li>
+              <li class="tag">Soporte Operativo en Taller</li>
+              <li class="tag">Mantenimiento e Higiene de Equipo</li>
+              <li class="tag">Interpretación de Indicaciones Técnicas</li>
+            </ul>
+          </div>
+
+          <div class="skill-block reveal-block" style="--delay: 0.22s;">
+            <h3>Competencias Personales</h3>
+            <p class="skill-desc">Actitudes clave para estudiar, trabajar en equipo y atender personas.</p>
+            <ul class="tag-list">
+              <li class="tag tag-accent">Puntualidad y Responsabilidad</li>
+              <li class="tag tag-accent">Trabajo en Equipo</li>
+              <li class="tag">Creatividad y Adaptabilidad</li>
+              <li class="tag">Respeto y Comunicación Clara</li>
+              <li class="tag">Ganas Constantes de Aprender</li>
+              <li class="tag">Idioma: Español (Nativo) / Inglés (Básico)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Personas con las que trabajé -->
+    <section id="colaboradores" class="section section-tinted">
+      <div class="container">
+        <div class="section-header reveal-block">
+          <span class="section-kicker">Trabajo en Equipo</span>
+          <h2>Personas con las que trabajé</h2>
+          <p class="section-intro">
+            Compañeros con los que compartí desarrollo de proyectos escolares, combinando organización, aprendizaje técnico y trabajo colaborativo.
+          </p>
+        </div>
+
+        <div class="collaborators-grid">
+          <article class="collab-card reveal-block" style="--delay: 0.08s;">
+            <div class="collab-head">
+              <div class="collab-avatar" aria-hidden="true">SC</div>
+              <div>
+                <h3>Shair Cuello</h3>
+                <p class="collab-role">Compañero de Proyectos Escolares • Instituto San Agustín</p>
+              </div>
+            </div>
+            <p class="collab-desc">
+              Trabajamos juntos en el diseño y desarrollo de <strong>EduEventos</strong> con Python y Tkinter, y en el armado, cableado y pruebas del <strong>Autito Seguidor de Línea</strong> en robótica educativa.
+            </p>
+            <div class="collab-tags">
+              <span class="tag tag-accent">EduEventos (Tkinter)</span>
+              <span class="tag tag-accent">Robótica Educativa</span>
+            </div>
+            <a
+              href="https://www.linkedin.com/in/shair-fernando-cuello-lopez-86364529a/"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-linkedin">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+              LinkedIn de Shair Cuello
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <div class="contact-banner reveal-block">
+          <div class="contact-info">
+            <span class="section-kicker">Contacto Seguro</span>
+            <h2>¿Querés comunicarte conmigo?</h2>
+            <p>
+              Estoy disponible para proyectos escolares, oportunidades de aprendizaje laboral (tardes y fines de semana) o consultas sobre mis trabajos. Por privacidad, este sitio publica únicamente canales seguros de contacto.
+            </p>
+          </div>
+
+          <div class="contact-cards">
+            <div class="contact-item">
+              <span class="contact-label">Correo electrónico</span>
+              <a href="mailto:enzocamano45@gmail.com" class="contact-value" id="email-text">enzocamano45@gmail.com</a>
+              <button type="button" class="copy-btn" id="copy-email-btn" aria-label="Copiar correo electrónico">
+                Copiar correo
+              </button>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-label">Ubicación y Disponibilidad</span>
+              <p class="contact-value">Córdoba Capital, Argentina</p>
+              <span class="contact-note">Tardes y fines de semana</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Enzo Eduardo Camaño — Córdoba Capital, Argentina</p>
+      <div class="footer-links">
+        <a href="#inicio" id="back-to-top">Volver arriba ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal accesible para ampliar evidencia visual de proyectos -->
+  <div class="modal-backdrop" id="evidence-modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-panel">
+      <div class="modal-head">
+        <h3 id="modal-title">Evidencia del proyecto</h3>
+        <button type="button" class="modal-close" id="modal-close-btn" aria-label="Cerrar ventana de evidencia">✕</button>
+      </div>
+      <div class="modal-content">
+        <img id="modal-image" src="" alt="" width="640" height="380">
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aviso flotante de acción (ej. correo copiado) -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
